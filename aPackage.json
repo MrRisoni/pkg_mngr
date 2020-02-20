@@ -1,0 +1,59 @@
+{
+  "maintainer": "foo",
+  "updated": "20200220012T1245Z",
+  "verison": "3.5.3",
+  "uses" : "",
+  "depends": [
+    {
+      "glibc": {
+        "eq": "4.6.*"
+      }
+    },
+    {
+      "fftw": {
+        "lte": "4.*"
+      }
+    }
+  ],
+  "choice-depends": [
+    {
+      "choice": "gui",
+      "options": [
+        {
+          "qt": {
+            "gte": "5.4.*"
+          },
+          "default": 1
+        },
+        {
+          "gtk": {
+            "gte": "3.*"
+          }
+        }
+      ]
+    },
+    {
+      "choice": "kernel",
+      "options": [
+        {
+          "gentoo-sources-headers": {
+            "gte": "4.9.97"
+          },
+          "default": 1
+        },
+        {
+          "vanilla-kernel-headers": {
+            "gte": "5.2.20"
+          }
+        }
+      ]
+    }
+  ],
+  "opt-depends": [
+    {
+      "jack": {
+        "eq": "6.7.8"
+      }
+    }
+  ]
+}
