@@ -1,0 +1,13 @@
+{
+  "maintainer": "foo",
+  "updated": "20200220012T1245Z",
+  "verison": "1.5.3",
+  "uses" : "",
+  "depends": [
+    {
+      "fftw": {
+        "eq": "4.0.0"
+      }
+    }
+  ]
+}

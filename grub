@@ -18,7 +18,8 @@ GRUB_DISTRIBUTOR="Gentoo"
 #GRUB_TIMEOUT_STYLE=menu
 
 # Append parameters to the linux kernel command line
-#GRUB_CMDLINE_LINUX=""
+GRUB_CMDLINE_LINUX="dolvm crypt_root=UUID=5900594a-0299-45fc-bdb3-7b42f02829fd root=/dev/mapper/gentoo-root"
+
 #
 # Examples:
 #
