@@ -1,0 +1,4 @@
+/dev/sda2: UUID="448af964-beb7-4e4d-ba88-9580ea95c89d" TYPE="ext2" PARTLABEL="boot" PARTUUID="3553e2ff-e685-420c-8cea-c79510fa1a2e"
+/dev/sda3: UUID="3dfc44a0-8d2c-4953-a7d6-2b9a47165d87" TYPE="swap" PARTLABEL="swap" PARTUUID="dcf224e3-4f08-4830-b0b0-9c5277ec94c8"
+/dev/sda4: UUID="5900594a-0299-45fc-bdb3-7b42f02829fd" TYPE="crypto_LUKS" PARTLABEL="lvm" PARTUUID="f552e58b-c5a9-43e6-b2d8-20f65e2eed1b"
+/dev/sda1: PARTLABEL="bios_grub" PARTUUID="593708d6-a43b-4fcf-95f9-186101c3a1dd"
