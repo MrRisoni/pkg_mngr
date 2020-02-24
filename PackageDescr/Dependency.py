@@ -1,6 +1,6 @@
-class Dependency(object):
-    def __init__(self):
+class Dependency():
+    def __init__(self,title,opr,ptr):
 
-        self.name = "glibc"
-        self.operate = "eq"
-        self.version = "4.6.*"
+        self.name = title
+        self.operate = opr
+        self.pattern = ptr

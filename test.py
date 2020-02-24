@@ -1,28 +1,22 @@
 import json
+from PackageDescr.Package import Package
+from PackageDescr.Dependency import Dependency
+from PackageDescr.ChoiceDependency import ChoiceDependency
+
+from PackageDescr.Choices import Choices
 
 
-class Dependency():
-    def __init__(self):
 
-        self.name = "glibc"
-        self.operate = "eq"
-        self.version = "4.6.*"
+dp = Dependency("base-system/glibc", "gte", "4.6.*")
+fftw = Dependency("general-margs/fftw", "lte", "4.*")
 
+qt = ChoiceDependency("apps-gui/qt", "gte", "5.4.*", True)
+gtk = ChoiceDependency("apps-gui/qtk", "gte", "3.6.*", False)
 
-class Package():
-    def __init__(self, first_name, deps):
-        self.name = first_name
-        self.maintainer = first_name
-        self.updated = first_name
-        self.version = first_name
-        self.uses = first_name
-        self.depends = deps
-        self.opt_depends = deps
-        self.choice_depends = deps
+gui = Choices("gui",[qt, gtk], False)
 
 
-dp = Dependency()
-pkg = Package("test", [dp])
+pkg = Package("apps-media/rosegarden","I am","2020021822T34Z","5..6.7",[],[dp,fftw],[],gui)
 
 
 json_data = json.dumps( pkg, default=lambda o: o.__dict__, indent=4,sort_keys=False)

@@ -1,5 +1,6 @@
 class Choices(object):
-    def __init__(self,opt_deps):
+    def __init__(self,title, choice_deps,allow_many):
 
-        self.title = "glibc"
-        self.options = opt_deps
+        self.title = title
+        self.options = choice_deps
+        self.allow_many = allow_many

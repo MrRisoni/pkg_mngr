@@ -1,11 +1,11 @@
 class Package:
 
-    def __init__(self, first_name, deps):
-        self.name = first_name
-        self.maintainer = first_name
-        self.updated = first_name
-        self.version = first_name
-        self.uses = first_name
-        self.depends = deps
-        self.opt_depends = deps
-        self.choice_depends = deps
+    def __init__(self, name, maintain,updated,version,uses,depends,opt_depends, choice_depends):
+        self.name = name
+        self.maintainer = maintain
+        self.updated = updated
+        self.version = version
+        self.uses = uses
+        self.depends = depends
+        self.opt_depends = opt_depends
+        self.choice_depends = choice_depends
