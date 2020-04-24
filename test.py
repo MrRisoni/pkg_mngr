@@ -1,5 +1,5 @@
 import json
-import yaml
+#import yaml
 from collections import namedtuple
 
 from PackageDescr.Package import Package
@@ -23,8 +23,8 @@ gui = Choices("gui",[qt, gtk], False)
 pkg = Package("apps-media/rosegarden","I am","2020021822T34Z","5..6.7",[],[dp,fftw],[],gui)
 
 
-with open('repository/apps-media/rosegarden.yml') as f:
-    data = yaml.load(f)
+#with open('repository/apps-media/rosegarden.yml') as f:
+#    data = yaml.load(f)
     #print(data)
 
 

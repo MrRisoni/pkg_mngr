@@ -38,7 +38,7 @@ class Portage:
 
         if major_needed > major_installed:
             needs_update = true
-        if major_needed >=  major_installed &&    
+        #if major_needed >=  major_installed &&    
 
 
 

@@ -14,4 +14,4 @@ else:
     #print args_list
     args_list = sys.argv[1:]
     print args_list
-    p.search(args_list[1])
+    p.search(args_list[0])
